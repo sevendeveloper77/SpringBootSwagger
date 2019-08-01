@@ -1,0 +1,23 @@
+# Server Details #
+server:
+  port: 9898
+  servlet:
+    context-path: /myapp
+    
+# Data Source #
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+   
+## Data Jpa #
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL55Dialect
+        formate-sql: true
